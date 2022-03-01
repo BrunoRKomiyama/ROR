@@ -4,4 +4,9 @@ class StaticPagesController < ApplicationController
     @nome = "Brino RK"
   end
 
+  def sobre
+  end
+
+  def contato
+  end
 end
