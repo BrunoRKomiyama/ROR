@@ -1,0 +1,67 @@
+body,
+ul,
+a,
+h1 {
+  font-family: 'Nunito';
+  margin: 0;
+  padding: 0;
+}
+
+a,
+li,
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  background-color: aqua;
+}
+
+.header .container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nav_a a {
+  border: 2px solid #000;
+  padding: 5px;
+  color: #000;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  box-shadow: 5px 5px 0 -2px #CCC,
+    5px 5px 0 0 #000;
+  transition: .1s ease;
+}
+
+
+.nav_a a:hover {
+  box-shadow: 3px 3px 0 -2px #CCC,
+    3px 3px 0 0 #000;
+}
+
+.nav_a li+li {
+  margin-left: 30px;
+}
+
+.container-fluid {
+  max-width: 960px;
+  margin: 60px auto;
+}
