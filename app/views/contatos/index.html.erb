@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Contatos</h1>
+
+<%= link_to "Novo Contato", new_contato_path, class: "btn azul" %>
+
+<div class="contatos">
+  <% @contatos.each do |contato| %>
+    <div class="contato_item">
+    <%= render contato %>
+      <%= link_to "Mostrar Contato", contato, class: "btn verde" %>
+    </div>
+  <% end %>
+</div>
+
+

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contatos
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
@@ -6,7 +7,7 @@ Rails.application.routes.draw do
   root to:"static_pages#index"
 
   get 'sobre', to: 'static_pages#sobre'
-  get 'contato', to: 'static_pages#contato'
+  get 'contatar', to: 'static_pages#contatar'
 
 
 end
